@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<style>
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=Submit] {
+  width: 100%;
+  background-image: linear-gradient(to right, #3ab2f7f6 , rgb(177, 34, 190));
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 35px;
+}
+
+
+
+#container {
+  border-radius: 5px;
+  background-color: white;  
+  padding: 20px;
+  width: 30%;
+  margin: auto;
+  margin-top: 30px;
+  height: 550px;
+}
+
+#stopka {
+  text-align: center;
+  margin-top: 175px;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  color: gray;
+}
+
+::placeholder
+{
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  color: gray;
+} 
+body
+{
+    background-image: linear-gradient(to top right, #3ab2f7f6 , rgb(177, 34, 190));  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+label {
+  text-align: center;
+}
+</style>
+<body>
+
+<div id = "container">
+  <form action="/action_page.php">
+    <center><label for="login"><h1>Login</h1></label></center>
+    <label for="fname">Username</label>
+    <input style="font-family: 'Font Awesome 5 free'; font-weight: 700;" type="text" id="fname" name="username" placeholder="&#xf007; Type your username">
+
+    <label for="lname">Password</label>
+    <input type="text" id="lname" name="password" placeholder="Type your password">
+
+  
+    <input type="Submit" value="LOGIN">
+
+    <div id="stopka">Or Sign Up Using for student<br><br> 
+    SIGN UP</div>
+  </form>
+</div>
+
+</body>
+</html>
